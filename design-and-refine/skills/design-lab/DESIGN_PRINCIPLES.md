@@ -4,6 +4,173 @@ This document contains curated best practices from world-class designers and des
 
 ---
 
+## Part 0: Taste the City Brand Overrides
+
+> **NOTE**: These brand-specific standards override the generic principles in Parts 2-3 when working on Taste the City projects. The plugin will automatically load `DESIGN_MEMORY.md` for full brand details.
+
+### Brand Colors (Taste the City)
+
+**Primary Palette:**
+```
+Chopped Kale (Primary):     #2D5D4C - Dark green for headers, brand presence, footer
+Sage Butter (Secondary):    #9CAB88 - Light sage for tags, subtle highlights
+Golden Hour (Accent):       #D4AF37 - Yellow/gold for PRIMARY CTAs (Login/Signup, Book Now)
+Heavy Cream (Neutral):      #F5EFE8 - Warm off-white for backgrounds (NOT pure white)
+Tomato Paste (Accent):      #BD5C3C - Terra cotta for secondary CTAs, featured items
+Charcoal (Text):            #161514 - Warm near-black for text (NOT pure black)
+```
+
+**Semantic Colors** (derived from palette):
+```
+Success:        #9CAB88 (Sage Butter)
+Error:          #BD5C3C (Tomato Paste)
+Warning:        #D4AF37 (Golden Hour)
+Info:           #2D5D4C (Chopped Kale)
+Highlight:      #D4AF37 (Golden Hour) - for selected cities, active tabs
+```
+
+**Color Rules:**
+- Always use Heavy Cream (#F5EFE8) instead of pure white backgrounds
+- Always use Charcoal (#161514) instead of pure black text
+- Keep all tones warm (no blue-grays or cool neutrals)
+- Food photography must remain natural and appetizing
+
+### Typography (Taste the City)
+
+**Type Families:**
+```
+Headings/Display:  Instrument Serif (character, distinction, brand personality)
+Body/UI:           Lato (readability, approachability)
+Data/Technical:    IBM Plex Mono (prices, addresses, hours)
+```
+
+**Type Scale:**
+```
+Display:    48-64px Instrument Serif Bold
+H1:         36-48px Instrument Serif Bold
+H2:         28-36px Instrument Serif Bold
+H3:         24-28px Instrument Serif Regular/Bold
+H4:         20-24px Instrument Serif Regular
+Body Large: 18-20px Lato Regular
+Body:       16px Lato Regular
+Small:      14px Lato Regular
+Caption:    12px Lato Regular
+Price/Data: 14-16px IBM Plex Mono Regular
+```
+
+**Typography Rules:**
+- Restaurant names: ALWAYS Instrument Serif (brand character)
+- UI labels/buttons: Lato Bold or Instrument Serif for primary CTAs
+- Pricing ($, $$, $$$): IBM Plex Mono
+- Addresses/hours: IBM Plex Mono
+
+### Spacing & Layout (Taste the City)
+
+**Grid:**
+- 8px base unit: 4, 8, 12, 16, 24, 32, 48, 64px
+- Density: Comfortable (food needs room to breathe)
+- Mobile-first: 16px minimum padding
+
+**Border Radius:**
+```
+Small (Tags/Pills):    4px
+Buttons:              8px
+Cards:                12px or 16px
+Large containers:     16px
+```
+
+**Shadows:**
+```
+Subtle: 0 1px 3px rgba(22, 21, 20, 0.1)
+Medium: 0 4px 6px rgba(22, 21, 20, 0.1)
+Strong: 0 10px 15px rgba(22, 21, 20, 0.15)
+```
+
+Note: Use warm Charcoal-based shadows, not cool grays.
+
+### Component Patterns (Taste the City)
+
+**Restaurant Card (Required Structure):**
+```
+┌──────────────────────────┐
+│ [Food Image - 16:9]      │ ← Prominent, natural colors
+├──────────────────────────┤
+│ Restaurant Name          │ ← Instrument Serif
+│ Italian • $$$ • 2.3 km   │ ← Lato + IBM Plex Mono
+│ ★★★★☆ 4.5 (120)         │
+│ [Book Now]               │ ← Chopped Kale or Tomato Paste
+└──────────────────────────┘
+```
+
+Must include:
+- Food/restaurant imagery (prominent)
+- Restaurant name (Instrument Serif)
+- Cuisine type (Lato)
+- Pricing tier ($, $$, $$$) in IBM Plex Mono
+- Rating with stars
+- Distance/location
+- CTA button
+
+**Button Hierarchy:**
+```
+Primary:   Golden Hour (#D4AF37) fill + Charcoal (#161514) text
+           8px border radius, Lato Bold or Instrument Serif
+           Use action verbs: "Login/Signup", "Book Now", "Explore"
+           Highest visibility for conversion actions
+
+Secondary: Chopped Kale (#2D5D4C) fill + Heavy Cream text
+           OR 2px border + transparent background
+           Same radius/padding as primary
+
+Tertiary:  Text-only Chopped Kale or Charcoal with underline on hover
+           No background or border
+```
+
+**Form Inputs:**
+```
+Border:   1px solid Charcoal-40%
+Radius:   8px
+Padding:  12px 16px
+Focus:    2px ring in Chopped Kale
+Font:     Lato 16px
+Labels:   Above input, Lato 14px, 8px spacing
+```
+
+**Tags/Pills:**
+```
+Background:  Sage Butter (#9CAB88) or light shades
+Text:        Charcoal or Chopped Kale
+Radius:      4px
+Padding:     4px 12px
+Font:        Lato 12-14px
+Use for:     Cuisine types, dietary restrictions
+```
+
+### Accessibility (Taste the City)
+
+**WCAG Level**: AA minimum, AAA for critical flows
+
+**Contrast Requirements:**
+- Chopped Kale (#2D5D4C) + Heavy Cream/white text: ✓ Meets AA
+- Heavy Cream (#F5EFE8) + Charcoal (#161514): ✓ Meets AAA
+- Tomato Paste (#BD5C3C) + white text: ✓ Meets AA
+
+**Touch Targets**: 48x48px (mobile-first food discovery app)
+
+**Focus Rings**: 2px solid Chopped Kale, 2px offset
+
+### Brand Tone (Taste the City)
+
+**Personality**: Living, breathing, character-driven, friendly, trustworthy
+**Voice**: Enthusiastic food guide, local expert, welcoming
+**Avoid**: Corporate, sterile, cold, overly technical
+
+**CTA Language Examples:**
+- ✅ "Explore nearby", "Discover flavors", "Book your table", "Find your taste"
+- ❌ "Click here", "Submit", "Go", "Enter"
+
+---
+
 ## Part 1: UX Foundations
 
 ### Jakob Nielsen's 10 Usability Heuristics

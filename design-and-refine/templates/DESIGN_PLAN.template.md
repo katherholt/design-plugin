@@ -6,6 +6,49 @@
 - **Winner variant:** {{WINNER_VARIANT}}
 - **Key improvements:** {{KEY_IMPROVEMENTS}}
 
+## Taste the City Brand Compliance
+
+### Color Palette
+- [ ] Uses Golden Hour (#D4AF37) for primary CTAs (Login/Signup, Book Now)
+- [ ] Uses Chopped Kale (#2D5D4C) for secondary CTAs and brand elements
+- [ ] Uses Heavy Cream (#F5EFE8) instead of pure white for backgrounds
+- [ ] Uses Charcoal (#161514) instead of pure black for text
+- [ ] Avoids cool grays and blue tones (keep everything warm-toned)
+- [ ] Food imagery uses natural colors (no heavy filters)
+
+### Typography
+- [ ] Restaurant names use Instrument Serif
+- [ ] Headings use Instrument Serif (Bold for H1-H2, Regular/Bold for H3-H4)
+- [ ] Body text and UI labels use Lato
+- [ ] Pricing tiers ($, $$, $$$) use IBM Plex Mono
+- [ ] Addresses, hours, and technical data use IBM Plex Mono
+
+### Layout & Spacing
+- [ ] Uses 8px grid system (4, 8, 12, 16, 24, 32, 48, 64px)
+- [ ] Comfortable density (food needs room to breathe)
+- [ ] Border radius: 8px for buttons, 12-16px for cards
+- [ ] Medium elevation shadows with warm Charcoal-based colors
+- [ ] Mobile-first with 16px minimum padding
+
+### Component Standards
+- [ ] Restaurant cards include: image, name (Instrument Serif), cuisine, price tier (IBM Plex Mono), rating, distance, CTA
+- [ ] Primary buttons: Golden Hour (#D4AF37) fill + Charcoal text
+- [ ] Secondary buttons: Chopped Kale fill + Heavy Cream text OR bordered
+- [ ] CTAs use action verbs: "Explore", "Discover", "Book Now" (NOT "Click here", "Submit")
+- [ ] Food imagery is prominent (16:9, 4:3, or 1:1 aspect ratios)
+- [ ] Tags/pills use Sage Butter (#9CAB88) background with 4px radius
+
+### Brand Tone
+- [ ] Feels friendly, welcoming, and character-driven (NOT corporate or sterile)
+- [ ] Copy uses enthusiastic but trustworthy voice
+- [ ] Avoids overly technical or cold language
+
+### Links & Resources
+- **Web App**: https://tastings.tastethecity.ca/
+- **Marketing Site**: https://www.tastethecity.ca/
+- **Design Memory**: See `DESIGN_MEMORY.md` in project root
+- **Brand Guidelines**: TTC Brand Guide (Chopped Kale, Sage Butter, Heavy Cream, Tomato Paste, Golden Hour)
+
 ## Files to Change
 {{#FILES_TO_CHANGE}}
 - [ ] `{{FILE_PATH}}` - {{REASON}}
@@ -50,12 +93,17 @@
 
 ## Accessibility Checklist
 - [ ] Keyboard navigation works for all interactive elements
-- [ ] Focus states are visible and meet contrast requirements
-- [ ] All form inputs have associated labels
+- [ ] Focus states use 2px Chopped Kale ring with 2px offset (visible and high contrast)
+- [ ] All form inputs have associated labels (above input, Lato 14px, 8px spacing)
 - [ ] ARIA attributes used correctly where needed
-- [ ] Color contrast meets WCAG AA (4.5:1 for text, 3:1 for UI)
-- [ ] Touch targets are at least 44x44px on mobile
+- [ ] Color contrast meets WCAG AA minimum, AAA for critical flows:
+  - [ ] Chopped Kale (#2D5D4C) + Heavy Cream/white text ✓ Meets AA
+  - [ ] Heavy Cream (#F5EFE8) + Charcoal (#161514) ✓ Meets AAA
+  - [ ] Golden Hour (#D4AF37) + Charcoal (#161514) ✓ Verify contrast
+- [ ] Touch targets are 48x48px minimum (mobile-first food discovery app)
 - [ ] Screen reader announces state changes appropriately
+- [ ] Alt text for all food imagery (describe the dish, not just "food photo")
+- [ ] Respects prefers-reduced-motion for animations
 
 ## Testing Checklist
 - [ ] Unit tests for business logic

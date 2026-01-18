@@ -331,6 +331,52 @@ Create the most appropriate temporary route for the detected framework.
 
 Each variant MUST explore a different design axis. Do not create minor variations—make them meaningfully distinct. **Use the project's existing visual language for all variants.**
 
+### Brand Locks (If DESIGN_MEMORY.md exists)
+
+**CRITICAL**: Before generating variants, check if `DESIGN_MEMORY.md` exists in the project root.
+
+If `DESIGN_MEMORY.md` exists:
+1. **Read the file completely** to understand brand standards
+2. **Lock the following across ALL variants:**
+   - Color palette (use only brand-specified colors)
+   - Typography (use only brand-specified fonts and type scale)
+   - Component conventions (follow brand's component structure rules)
+   - CTA language (use brand's voice and action verbs)
+   - Spacing system (use brand's grid if specified)
+   - Border radius values (use brand's standards)
+   - Shadow styles (use brand's elevation system)
+
+3. **Free to vary (only these axes):**
+   - Information hierarchy (what gets emphasized, Gestalt grouping)
+   - Layout model (card vs list vs table, column count, arrangement)
+   - Density (how spacing tokens are applied within brand grid)
+   - Interaction patterns (hover, loading, validation approaches)
+   - Component composition (which components are used where)
+
+4. **Document brand compliance** in each variant's comments:
+   ```tsx
+   // BRAND LOCKED: Colors (Chopped Kale, Golden Hour, Heavy Cream)
+   // BRAND LOCKED: Typography (Instrument Serif headings, Lato body)
+   // FREE TO VARY: Card vs list layout, information grouping
+   ```
+
+**Example with Brand Locks:**
+If `DESIGN_MEMORY.md` specifies:
+- Primary CTA color: Golden Hour (#D4AF37)
+- Headings: Instrument Serif
+- Restaurant names: Must use Instrument Serif
+
+Then ALL 5 variants must:
+- Use Golden Hour for primary buttons
+- Use Instrument Serif for all headings
+- Display restaurant names in Instrument Serif
+
+But variants can differ in:
+- Whether restaurant cards are vertical or horizontal
+- How much spacing between cards (using brand's spacing scale)
+- Whether to show 2 or 3 columns on desktop
+- How to structure the information hierarchy
+
 **Variant A: Information Hierarchy Focus**
 - Restructure content hierarchy (what's most important?)
 - Apply Gestalt proximity—group related items closer
