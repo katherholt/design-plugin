@@ -141,20 +141,20 @@ If target is unclear, propose a name based on repo patterns and confirm.
 - Header: "Visual style"
 - Question: "What products or brands should I reference for visual inspiration?"
 - Options:
-  - "Stripe" - Clean, minimal, trustworthy
-  - "Linear" - Dense, keyboard-first, developer-focused
-  - "Notion" - Flexible, content-focused, playful
-  - "Apple" - Premium, spacious, refined
+  - "UberEats" - Photo-first, clear categories, appetizing presentation
+  - "Airbnb Experiences" - Discovery-focused, rich imagery, trust signals
+  - "Google Maps" - Location-centric, clear navigation, dense information
+  - "Yelp" - Review-focused, user-generated content, local flavor
 - multiSelect: true
 
 **Question 3: Functional Inspiration**
 - Header: "Interactions"
 - Question: "What interaction patterns should I emulate?"
 - Options:
-  - "Inline editing" - Edit in place without modals
-  - "Progressive disclosure" - Show more as needed
-  - "Optimistic updates" - Instant feedback, sync in background
-  - "Keyboard shortcuts" - Power user efficiency
+  - "Swipeable cards" - Tinder-style browsing, quick discovery
+  - "Map-first navigation" - Location pins, cluster views, area exploration
+  - "Filter sheets" - Bottom drawer filters, quick refinement
+  - "Image galleries" - Full-screen photos, swipe through food shots
 
 ### Step 1.3: Brand & Style Direction
 
